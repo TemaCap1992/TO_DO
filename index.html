@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TO DO</title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="container">
+            <h3 id="todayNumber"></h3>
+            <input id='new-task' type="text">
+            <input id='newDeadLine' type="text">
+            <button id='add'>Add</button>
+            <h3 id="todoTitle"></h3>
+            <button id='delAllTodo' class="allDel">All Dell</button>
+            <ul id="unfinishedTask"></ul>
+            <h3 id="inProgressTitle"></h3>
+            <button id='delInProgress' class="allDel">All Dell</button>
+            <ul id="finishedTask"></ul>
+            <h3 id="doneTitle"></h3>
+            <button id='delDone' class="allDel">All Dell</button>
+            <ul id="done"></ul>
+        </div>
+    </div>
+    <buttton class="btn" data-path="one">Window 1</buttton>
+    <!-- <buttton class="btn" data-path="two">Window 2</buttton> -->
+    <div class="modals">
+        <div class="modal-overlay">
+            <div class="modal modal--1" data-target="one">
+                continue deleting ?
+                <button class="btnModal">Yes</button>
+                <button class="btnModal">No</button>
+            </div>
+            <!-- <div class="modal modal--2" data-target="two">
+                Second window
+            </div> -->
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
