@@ -144,7 +144,7 @@ function unfinishTask() {
     let listItem = this.parentNode;
     let checkbox = listItem.querySelector('button.checkbox');
     checkbox.className = "material-icons checkbox";
-    checkbox.innerHTML = "<i class = 'material-icons'>check_box_outline_blank'</i>";
+    checkbox.innerHTML = "<i class = 'material-icons'>check_box_outline_blank</i>";
     unfinishedTask.appendChild(listItem);
     bindTaskEvents(listItem, finishTask);
     save();
